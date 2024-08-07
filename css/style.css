@@ -1,0 +1,150 @@
+
+section{
+    margin-top: 100px;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar .nav-link{
+    position: relative;
+}
+.navbar .nav-link:after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s;
+
+    
+}
+.navbar .nav-link:hover::after{
+    width: 100%;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0em solid;
+    border-right: 0em solid transparent;
+    border-bottom: 0;
+    border-left: 0em solid transparent;
+}
+
+.navbar .nav-item{
+    width: fit-content;
+}
+header .landing-caption h1{
+    font-size: 60px;
+}
+
+
+.span-font{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* services */
+
+.service-card .circle{
+    width: 100px;
+    height: 100px;
+   border: 7px solid #0078FF;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: .5s;
+}
+.service-card:hover .circle{
+    background-color: #0078FF;
+    color: #fff;
+    border: 7px solid #d1d4d6;;
+}
+
+
+
+/* counter */
+ #counter{
+    background-image: linear-gradient(rgba(26,108,201,0.7),rgba(26,108,201,0.7)),url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#counter .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+   
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 40px;
+    border: 7px solid #CDE1F8;
+}
+
+/* portfolio */
+#portfolio .port-text .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #0078FF;
+    border: 5px solid #0078FF;
+}
+
+
+
+/* portfolio */
+
+#portfolio{
+    background-color: #F5F5F5 ;
+}
+#portfolio .port-card:hover img{
+    transform: scale(1.1);
+   
+}
+#portfolio .port-card .port-img{
+    overflow: hidden;
+}
+#portfolio .port-card img{
+    transition: 0.3s;
+}
+
+
+/* testimonal */
+#testimonial .carousel-indicators [data-bs-target]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#testimonial{
+    background-image:  linear-gradient(rgba(26,108,201,0.7),rgba(26,108,201,0.7)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   
+    
+
+
